@@ -1,0 +1,14 @@
+Tables
+	Users
+		uname : varchar2(20) primary key
+		num_visits : integer
+		pname as active_page : varchar2(20) foreign key
+		isActive : integer
+	Pages
+		pname : varchar2(20) primary key
+		num_entrances : integer
+		num_exits : integer
+	Links
+		( pnamef : varchar2(20) 
+		 pnamet : varchar2(20) ) primary key
+		num_access : integer
